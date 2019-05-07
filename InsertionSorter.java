@@ -14,7 +14,13 @@ public class InsertionSorter extends Sorter {
 
 
     /**
-      sort the user's data, implementing insertion sort
+      pre-condition: given a list of 1 or more elements of class String
+
+      Insert the first unsorted element into it's correct position
+      Shift the values that are greater to the right
+
+      Post-condition a sorted list of elements
+
      */
     public void mySort() {
         for (int indexToCompare = 1; indexToCompare < elements.size(); indexToCompare++){
@@ -39,6 +45,6 @@ public class InsertionSorter extends Sorter {
         elements.set(shiftFrom + 1, elements.get(shiftFrom));
     }
     private void dropValue(int indexToDrop, String value){
-    elements.set(indexToDrop, value);
-}
+        elements.set(indexToDrop, value);
+    }
 }

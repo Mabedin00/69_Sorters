@@ -11,7 +11,12 @@ public class SelectionSorter extends Sorter {
     }
 
     /**
-      sort the user's data, implementing insertion sort
+      pre-condition: given a list of 1 or more elements
+
+      Select the smallest element
+      Swap it with the value at the boundary.
+
+      Post-condition a sorted list of elements
      */
     public void mySort() {
         for( int idx = 0; idx < elements.size() -1; idx++) {
